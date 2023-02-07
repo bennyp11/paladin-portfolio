@@ -10,7 +10,6 @@ function Avatar(props) {
       style={{
         width: size,
         height: size,
-        borderRadius: "50%",
       }}
     />
   );
