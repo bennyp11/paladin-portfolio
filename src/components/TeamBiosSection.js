@@ -5,87 +5,88 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
-import Avatar from "./Avatar";
+import "./SkillsSection.css";
+
 
 function TeamBiosSection(props) {
   const items = [
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/brands/angular.svg",
-      name: "Front-End Development",
+      avatar: "fa-brands fa-angular",
+      name: "Front-End",
       role: "Angular, React, anything else",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/computer.svg",
+      avatar: "fa-solid fa-file-code",
       name: "Web Fundamentals",
       role: "HTML, CSS, Javascript (all the good stuff)",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/palette.svg",
+      avatar: "fa-solid fa-swatchbook",
       name: "Web Design Patterns",
       role: "Responsive, Progressive Web Apps, Aesthetic Color / Spacing, Accessibility",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/stapler.svg",
+      avatar: "fa-solid fa-stapler",
       name: "Browser Data Cacheing",
       role: "Cookies, Local Storage, Session Storage",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/brands/node-js.svg",
-      name: "Back-End Development",
+      avatar: "fa-brands fa-node",
+      name: "Back-End",
       role: "NodeJS, Java, a little Python",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/code.svg",
+      avatar: "fa-solid fa-door-open",
       name: "API Development",
       role: "REST, CRUD, in Express and Java Servlets",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/handcuffs.svg",
+      avatar: "fa-solid fa-file-shield",
       name: "Security",
       role: "Auth0, Session Security, JSON Web Tokens, Encryption, Parameterized Queries",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/database.svg",
+      avatar: "fa-solid fa-box-open",
       name: "Data Storage",
       role: "S3, Redis, MySQL, Postgres, Oracle, MongoDB",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/cloud.svg",
-      name: "Database Development",
+      avatar: "fa-solid fa-scroll",
+      name: "Database",
       role: "SQL & NoSQL",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/diagram-project.svg",
+      avatar: "fa-solid fa-table",
       name: "Schema Design",
       role: "Using primary keys, foreign keys, and indexes",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/handshake.svg",
+      avatar: "fa-solid fa-handshake",
       name: "Data Integration",
       role: "Using Cloud tools to integrate data from multiple sources",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/house.svg",
+      avatar: "fa-solid fa-warehouse",
       name: "Data Warehousing",
       role: "Setting data models for analytical analysis",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/brands/aws.svg",
-      name: "Infrastructure Development",
+      avatar: "fa-brands fa-aws",
+      name: "Infrastructure",
       role: "Deploying to AWS, GCP, or Oracle Cloud",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/server.svg",
+      avatar: "fa-solid fa-server",
       name: "Web Servers",
       role: "NGINX, Tomcat",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/arrow-up-from-ground-water.svg",
+      avatar: "fa-solid fa-cloud-arrow-up",
       name: "Scaling",
       role: "Scaling Virtual Machines, S3",
     },
     {
-      avatar: "https://bennyp-bucket.s3.us-west-1.amazonaws.com/svgs/solid/globe.svg",
+      avatar: "fa-solid fa-globe",
       name: "Networking",
       role: "DNS & Network Firewalling",
     },
@@ -103,7 +104,7 @@ function TeamBiosSection(props) {
         <SectionHeader
           title={props.title}
           subtitle={props.subtitle}
-          size={2}
+          size={1}
           spaced={true}
           className="text-center"
         />
@@ -116,12 +117,13 @@ function TeamBiosSection(props) {
               className="py-3 d-flex align-items-stretch text-center"
               key={index}
             >
-              <Card className="d-flex flex-grow-1 flex-column text-center align-items-center border-0">
-                <Card.Body className="p-2">
-                  <Avatar src={item.avatar} alt={item.name} size="96px" />
-                  <div className="mt-4">
-                    <h6 className="font-weight-bold mb-0">{item.name}</h6>
-                    <small>{item.role}</small>
+              <Card id="card-id" className="card-container">
+                <Card.Body className="p-3">
+                  <i class={item.avatar} alt={item.name} style={{color: "#669bbc", fontSize: "8rem", maxHeight: "128px"}}/>
+                  <div className="mt-3">
+                    <h5 className="font-weight-bold mb-0" style={{color: "#fdf0d5"}}>{item.name}</h5>
+                    <br/>
+                    <p style={{color: "#fdf0d5"}}>{item.role}</p>
                   </div>
                 </Card.Body>
               </Card>

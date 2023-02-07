@@ -10,6 +10,7 @@ function Avatar(props) {
       style={{
         width: size,
         height: size,
+        filter: "hue-rotate(180deg)",
       }}
     />
   );

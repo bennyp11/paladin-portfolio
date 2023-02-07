@@ -40,17 +40,10 @@ function IndexPage(props) {
         bgImageOpacity={1}
         title="My Journey"
       />
-      <StatsSection
-        bg="light"
-        textColor="dark"
-        size="md"
-        bgImage=""
-        bgImageOpacity={1}
-      />
       <TeamBiosSection
         bg="light"
         textColor="dark"
-        size="md"
+        size="lg"
         bgImage=""
         bgImageOpacity={1}
         title="My Skills"

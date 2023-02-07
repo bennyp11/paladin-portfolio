@@ -18,7 +18,7 @@ function ClientsSection(props) {
         <SectionHeader
           title={props.title}
           subtitle={props.subtitle}
-          size={2}
+          size={1}
           spaced={true}
         />
         <Row className="justify-content-center">
