@@ -32,8 +32,8 @@ function App(props) {
           size="sm"
           bgImage=""
           bgImageOpacity={1}
-          copyright={`© ${new Date().getFullYear()} Company`}
-          logo="https://uploads.divjoy.com/logo.svg"
+          copyright={`© ${new Date().getFullYear()} Benny P`}
+          logo="https://bennyp-bucket.s3.us-west-1.amazonaws.com/Paladin+Programmer.svg"
         />
       </>
     </Router>

@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { LinkContainer } from "react-router-bootstrap";
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-scroll";
 import "./NavbarCustom.scss";
 
 function NavbarCustom(props) {
@@ -29,44 +30,62 @@ function NavbarCustom(props) {
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           <Nav>
             <Nav.Item>
-              <Nav.Link
-                href="https://app.mysite.com/auth/signin"
-                active={false}
-              >
+              <Nav.Link>
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact={true}
+                  offset={-600}
+                >
                 About
+                </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                href="https://app.mysite.com/auth/signin"
-                active={false}
+              <Nav.Link>
+              <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact={true}
+              offset={-50}
               >
-                Skills
+              Skills
+              </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                href="https://app.mysite.com/auth/signin"
-                active={false}
+            <Nav.Link>
+              <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact={true}
+              offset={-50}
               >
-                Projects
+              Projects
+              </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                href="https://app.mysite.com/auth/signin"
-                active={false}
-              >
+              <Nav.Link>
+                <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact={true}
+                offset={-50}
+                >
                 Contact
+                </Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                href="https://app.mysite.com/auth/signin"
-                active={false}
-              >
-                Contracting
-              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

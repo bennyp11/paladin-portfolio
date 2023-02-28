@@ -52,19 +52,10 @@ function IndexPage(props) {
       <ContentCardsSection
         bg="light"
         textColor="dark"
-        size="md"
+        size="lg"
         bgImage=""
         bgImageOpacity={1}
-        title="Featured Content"
-        subtitle=""
-      />
-      <TestimonialsSection
-        bg="light"
-        textColor="dark"
-        size="md"
-        bgImage=""
-        bgImageOpacity={1}
-        title="Here's what people are saying"
+        title="My Projects"
         subtitle=""
       />
       <ContactSection
@@ -73,24 +64,11 @@ function IndexPage(props) {
         size="md"
         bgImage=""
         bgImageOpacity={1}
-        title="Contact Us"
+        title="Contact Me"
         subtitle=""
         buttonText="Send message"
         buttonColor="primary"
         showNameField={true}
-      />
-      <NewsletterSection
-        bg="light"
-        textColor="dark"
-        size="md"
-        bgImage=""
-        bgImageOpacity={1}
-        title="Stay in the know"
-        subtitle="Receive our latest articles and feature updates"
-        buttonText="Subscribe"
-        buttonColor="primary"
-        inputPlaceholder="Enter your email"
-        subscribedMessage="You are now subscribed!"
       />
     </>
   );

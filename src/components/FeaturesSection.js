@@ -93,7 +93,7 @@ function FeaturesSection(props) {
           spaced={true}
           className="text-center"
         />
-        <div className="FeaturesSection__features">
+        <div id="about" className="FeaturesSection__features">
           {items.map((item, index) => (
             <Row className="align-items-center" key={index}>
               <Col xs={12} lg={6}>

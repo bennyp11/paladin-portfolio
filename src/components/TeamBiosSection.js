@@ -78,17 +78,17 @@ function TeamBiosSection(props) {
     {
       avatar: "fa-solid fa-server",
       name: "Web Servers",
-      role: "NGINX, Tomcat",
+      role: "NGINX & Tomcat",
     },
     {
       avatar: "fa-solid fa-cloud-arrow-up",
-      name: "Scaling",
-      role: "Scaling Virtual Machines, S3",
+      name: "CI/CD",
+      role: "Vercel & Netlify",
     },
     {
       avatar: "fa-solid fa-globe",
-      name: "Networking",
-      role: "DNS & Network Firewalling",
+      name: "DevOps Tools",
+      role: "Git, Kubernetes, Docker, DeepSource",
     },
   ];
 
@@ -100,7 +100,7 @@ function TeamBiosSection(props) {
       bgImage={props.bgImage}
       bgImageOpacity={props.bgImageOpacity}
     >
-      <Container>
+      <Container id="skills">
         <SectionHeader
           title={props.title}
           subtitle={props.subtitle}

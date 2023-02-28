@@ -13,7 +13,7 @@ function ContactSection(props) {
       bgImage={props.bgImage}
       bgImageOpacity={props.bgImageOpacity}
     >
-      <Container
+      <Container id="contact"
         style={{
           maxWidth: "850px",
         }}
