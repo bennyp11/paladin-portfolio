@@ -7,6 +7,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
 import AspectRatio from "./AspectRatio";
+import "./ContentCardsSection.css";
 
 function ContentCardsSection(props) {
   const items = [
@@ -68,16 +69,16 @@ function ContentCardsSection(props) {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&w=800&h=600&q=80",
-      title: "Sendmo/Requestmo",
-      body: "Simple QR web app that auto-populates a predetermined Venmo address and amount.",
+        "https://images.unsplash.com/photo-1590845947667-381579052389?auto=format&fit=crop&w=800&h=600&q=80",
+      title: "SmartBrain",
+      body: "Full stack React/Javascript/Postgres app with self-hosted login and registration.",
       url: "/post/ballons",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1590845947667-381579052389?auto=format&fit=crop&w=800&h=600&q=80",
-      title: "SmartBrain",
-      body: "Full stack React/Javascript/Postgres app with self-hosted login and registration.",
+        "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&w=800&h=600&q=80",
+      title: "Sendmo/Requestmo",
+      body: "Simple QR web app that auto-populates a predetermined Venmo address and amount.",
       url: "/post/ballons",
     },
     {
@@ -108,7 +109,7 @@ function ContentCardsSection(props) {
         <SectionHeader
           title={props.title}
           subtitle={props.subtitle}
-          size={2}
+          size={1}
           spaced={true}
           className="text-center"
         />
@@ -116,12 +117,12 @@ function ContentCardsSection(props) {
           {items.map((item, index) => (
             <Col xs={12} md={6} lg={3} className="py-3" key={index}>
               <LinkContainer to={item.url}>
-                <Card as="a" text="dark" className="text-decoration-none">
+                <Card as="a" id="card-container" text="light" className="text-decoration-none">
                   <AspectRatio ratio={1 / 0.75}>
                     <Card.Img src={item.image} alt={item.title} variant="top" />
                   </AspectRatio>
                   <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
+                    <Card.Title className="project-title">{item.title}</Card.Title>
                     <Card.Text>{item.body}</Card.Text>
                   </Card.Body>
                 </Card>
