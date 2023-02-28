@@ -7,7 +7,7 @@
     border: 0;
     border-radius: 30px;
     background-color: #003049;
-    height: 375px;
+    min-height: 400px;
   }
 
   .project-title {

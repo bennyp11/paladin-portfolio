@@ -7,7 +7,7 @@ $theme-colors: (
   "success": #28a745,
   "danger": #c1121f,
   "warning": #ffc107,
-  "info": #17a2b8,
+  "info": #669bbc,
   "light": #fdf0d5,
   "dark": #003049,
   "white": #fdf0d5,
@@ -44,6 +44,7 @@ $grid-breakpoints: (
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
   // Push footer to the bottom of the screen
   > .footer {
     margin-top: auto;
